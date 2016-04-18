@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PHP Forum</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navvybar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="navbar-brand" href="#">PHP Forum</a>
+		    </div>
+			<div class="collapse navbar-collapse" id="navvybar">
+		      <ul class="nav navbar-nav">
+		        <li><a href="/forum/php/index.php">Home</a></li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="/forum/php/category.php?id=3">General Discussion</a></li>
+		            <li><a href="/forum/php/category.php?id=4">Problem Solving</a></li>
+		            <li><a href="/forum/php/category.php?id=5">Work &amp; Employment</a></li>
+		            <li><a href="/forum/php/category.php?id=6">Miscellaneous</a></li>
+		            <li><a href="/forum/php/categories.php">Show all -></a></li>
+		          </ul>
+		        </li>
+		        <li><a href="/forum/php/createTopic.php">Create a topic</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<!-- ==xxx== -->
+				<li>
+					<a href='/forum/php/user.php?id=---$userId---'><span></span>---$userName---</a>
+				</li>
+				<li>
+					<a href='/forum/php/signout.php'><span></span>Sign out</a>
+				</li>
+				<!-- ==xxx== -->
+				<li>
+					<a href='/forum/php/signup.php'><span></span>Sign Up</a>
+				</li>
+				<li>
+					<a href='/forum/php/signin.php'><span></span>Sign in</a>
+				</li>
+				<!-- ==xxx== -->
+		      </ul>
+	    	</div>
+		</div>
+	</nav>
+
+	<div id="content">
+	<div class="jumbotron">

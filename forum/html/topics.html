@@ -1,0 +1,55 @@
+<div class='alert alert-warning'>
+	<h3>---$errorMessage---</h3>
+</div>
+
+<!-- ==xxx== -->
+
+<h3>---$head---</h3>
+
+<!-- ==xxx== -->
+
+<table class='table table-bordered table-striped'>
+	<tbody>
+
+<!-- ==xxx== -->
+
+<tr>
+	<td class='col-sm-2'>---$rowName---<br>---$rowDate---</td>
+	<td class='col-sm-10'>---$rowContent---</td>
+</tr>
+
+<!-- ==xxx== -->
+
+	</tbody>
+</table>
+
+<!-- ==xxx== -->
+
+<form action='../php/post.php?id=---$postId---' method='post' class='form-horizontal' role='form'>
+	<div class='form-group'>
+		<label class='control-label col-sm-2' for='replyContent'>Reply:</label>
+		<div class='col-sm-10'>
+			<textarea class='form-control' name='replyContent' id='replyContent'></textarea>
+		</div>
+	</div>
+	<div class='form-group'>
+		<div class='col-sm-offset-2 col-sm-10'>
+
+<!-- ==xxx== -->
+
+		<input class='btn btn-primary' type='submit' value='Submit reply'/>
+		</div>
+	</div>
+</form>
+
+<!-- ==xxx== -->
+
+		<input class='btn btn-primary' disabled='disabled' type='submit' value='Submit reply'/>
+		</div>
+	</div>
+	<div class='form-group'>
+		<div class='col-sm-offset-2 col-sm-10'>
+			<div class='alert alert-warning'>You must be signed in to reply.</div>
+		</div>
+	</div>
+</form>

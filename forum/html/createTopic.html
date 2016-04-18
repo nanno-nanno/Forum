@@ -1,0 +1,55 @@
+<h3>Create a topic</h3>
+
+<!-- ==xxx== -->
+
+<div class='alert alert-warning'>
+	<h3>---$errorMessage---</h3>
+	<a class='btn btn-warning' href="../php/signin.php">Sign in?</a>
+</div>
+
+<!-- ==xxx== -->
+
+<div class='alert alert-warning'>
+	<h3>---$errorMessage---</h3>
+</div>
+
+<!-- ==xxx== -->
+
+<form action='' method='post' class='form-horizontal' role='from'>
+	<div class='form-group'>
+		<label class='control-label col-sm-2' for='topicSubject'>Subject:</label>
+		<div class='col-sm-10'>
+			<input class='form-control' type='text' name='topicSubject'/>
+		</div>
+	</div>
+	<div class='form-group'>
+		<label class='control-label col-sm-2' for='category'>Choose category:</label>
+		<div class='col-sm-10'>
+			<select class='form-control' name='category'>
+			<!-- ==xxx== -->
+				<option value='---$rowId---'>---$rowName---</option>
+			<!-- ==xxx== -->
+			</select>
+		</div>
+	</div>
+	<div class='form-group'>
+		<label class='control-label col-sm-2' for='postContent'>Message:</label>
+		<div class='col-sm-10'>
+			<textarea class='form-control' name='postContent'></textarea>
+		</div>
+	</div>
+	<div class='form-group'>
+		<div class='col-sm-offset-2 col-sm-10'>
+			<input class='btn btn-primary' type='submit' name='submitBtn' value='Create topic'/>
+		</div>
+	</div>
+</form>
+
+<!-- ==xxx== -->
+
+<div class='alert alert-warning'>
+	<!-- ==xxx== -->
+	<p>---$error---</p>
+	<!-- ==xxx== -->
+	<a class='btn btn-warning' href='../php/createTopic.php'>Return</a>
+</div>
